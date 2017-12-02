@@ -4,33 +4,46 @@
     android:id="@+id/activity_main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FF3D00"
+
+    android:background="@drawable/gradient"
+
     android:orientation="vertical"
     tools:context="me.rayokaah.mlh.MainActivity">
+
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="16dp"
-        android:background="#F8BBD0"
+        android:layout_marginBottom="4dp"
+        android:background="#FFFFFF"
         android:text="Welcome To Pick MY Dirt!"
         android:textSize="24sp"
 
         />
 
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/waste1" />
+
     <EditText
+        android:id="@+id/name_field"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Type Your Name here"
+        android:textColorHint="#FFFFFF"
         android:textSize="16sp" />
 
     <EditText
         android:id="@+id/description"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="96dp"
+        android:layout_marginBottom="48dp"
         android:layout_marginTop="48dp"
-        android:hint="Carefully descripe your address here. \n include special signs, supermarket, \n buildings etc to help us locate you"
+        android:hint="Carefully describe your address here. \n include special signs, supermarket, \n buildings etc to help us locate you"
         android:inputType="textMultiLine"
         android:scrollbars="vertical"
         android:textColorHint="#FFFFFF"
@@ -43,6 +56,7 @@
         android:layout_gravity="center_horizontal"
         android:background="#00E676"
         android:gravity="bottom"
+        android:onClick="requestPickup"
         android:paddingBottom="12dp"
         android:paddingLeft="24dp"
         android:paddingRight="24dp"
