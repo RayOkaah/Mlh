@@ -15,7 +15,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="4dp"
-        android:background="#FFFFFF"
+        android:background="#4CAF50"
         android:text="Welcome To Pick MY Dirt!"
         android:textSize="24sp"
 
@@ -54,7 +54,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
-        android:background="#00E676"
+        android:background="#0091EA"
         android:gravity="bottom"
         android:onClick="requestPickup"
         android:paddingBottom="12dp"
